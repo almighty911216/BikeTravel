@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Android.iml" filepath="$PROJECT_DIR$/Android.iml" />
+      <module fileurl="file://$PROJECT_DIR$/androidbootstrap/androidbootstrap.iml" filepath="$PROJECT_DIR$/androidbootstrap/androidbootstrap.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/digitspeedview/digitspeedview.iml" filepath="$PROJECT_DIR$/digitspeedview/digitspeedview.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lvanims-core/lvanims-core.iml" filepath="$PROJECT_DIR$/lvanims-core/lvanims-core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/navtabstrip/navtabstrip.iml" filepath="$PROJECT_DIR$/navtabstrip/navtabstrip.iml" />
+      <module fileurl="file://$PROJECT_DIR$/nineoldandroids-2.4.0/nineoldandroids-2.4.0.iml" filepath="$PROJECT_DIR$/nineoldandroids-2.4.0/nineoldandroids-2.4.0.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pulltozoomview/pulltozoomview.iml" filepath="$PROJECT_DIR$/pulltozoomview/pulltozoomview.iml" />
+      <module fileurl="file://$PROJECT_DIR$/speedviewlib/speedviewlib.iml" filepath="$PROJECT_DIR$/speedviewlib/speedviewlib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/universal-image-loader-1.9.5/universal-image-loader-1.9.5.iml" filepath="$PROJECT_DIR$/universal-image-loader-1.9.5/universal-image-loader-1.9.5.iml" />
+    </modules>
+  </component>
+</project>

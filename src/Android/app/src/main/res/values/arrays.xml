@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="bicycle_road_tab_titles">
+        <item>길찾기</item>
+        <item>국토종주</item>
+        <item>전국</item>
+    </string-array>
+
+</resources>

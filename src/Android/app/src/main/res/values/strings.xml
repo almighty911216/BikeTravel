@@ -4,7 +4,7 @@
     <string name="activity_title_home">홈</string>
     <string name="activity_title_dashboard">대쉬보드</string>
     <string name="activity_title_pathfinding">경로탐색</string>
-    <string name="activity_title_search">자전거 보관소</string>
+    <string name="activity_title_parking_lot">자전거 보관소</string>
     <string name="activity_title_social">게시판</string>
     <string name="activity_title_stamp_auth">도장 찍기</string>
 
@@ -34,6 +34,12 @@
     <string name="lapse">경과시간</string>
     <string name="my_loc">내 위치</string>
     <string name="weight">체중</string>
+    
+    <!-- 주차장 -->
+    <string name="parking_loc">주차위치 :</string>
+    <string name="parking_time">주차시간 :</string>
+    <string name="park">주차</string>
+    <string name="find_parking_loc">찾기</string>
 
     <!-- 로그인 -->
     <string name="username">이름</string>
@@ -111,6 +117,8 @@
     <!-- For Update -->
     <string name="confirm_exit">Press Back button again to exit</string>
 
+    <string name="context_menu">Context menu</string>
+
     <string name="geofences_added">Geofences added</string>
     <string name="geofences_removed">Geofences removed</string>
 
@@ -136,9 +144,9 @@
         Click notification to return to app
     </string>
 
-    <string name="insufficient_permissions">Insufficient permissions.</string>
-    <string name="permission_rationale">Location permission is needed for core functionality</string>
-    <string name="permission_denied_explanation">Permission was denied, but is needed for core functionality.</string>
-    <string name="settings">Settings</string>
+    <!--    Permissions    -->
+    <string name="permission_rationale_location">Access to the location service is required to demonstrate the \'my location\' feature, which shows your current location on the map.</string>
+    <string name="location_permission_denied">This sample requires location permission to enable the \'my location\' layer. Please try again and grant access to use the location.\nIf the permission has been permanently denied, it can be enabled from the System Settings &gt; Apps &gt; \'Google Maps API Demos\'.</string>
+    <string name="permission_required_toast">Location permission is required for this demo.</string>
 
 </resources>

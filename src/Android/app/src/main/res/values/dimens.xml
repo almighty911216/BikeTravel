@@ -5,8 +5,6 @@
 
     <dimen name="fab_margin">16dp</dimen>
 
-    <!-- Define standard dimensions to comply with Holo-style grids and rhythm. -->
-
-    <!-- Semantic definitions -->
+    <dimen name="tool_bar_height">56dp</dimen>
 
 </resources>

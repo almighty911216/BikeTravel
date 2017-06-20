@@ -2,6 +2,9 @@ package com.example.almig.android;
 
 import android.content.res.Configuration;
 import android.content.res.Resources;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.graphics.drawable.BitmapDrawable;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.v4.app.Fragment;
@@ -11,6 +14,9 @@ import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.BaseAdapter;
@@ -23,18 +29,25 @@ import com.example.almig.android.adapter.DrawerAdapter;
 import com.example.almig.android.fragment.BicycleRoadFragment;
 import com.example.almig.android.fragment.DashboardFragment;
 import com.example.almig.android.fragment.HomeFragment;
+import com.example.almig.android.fragment.ParkingLotFragment;
 import com.example.almig.android.fragment.SocialFragment;
 import com.example.almig.android.model.DrawerItem;
 import com.example.almig.android.util.ImageUtil;
+import com.example.contextmenu.ContextMenuDialogFragment;
+import com.example.contextmenu.MenuObject;
+import com.example.contextmenu.MenuParams;
+import com.example.contextmenu.interfaces.OnMenuItemClickListener;
+import com.example.contextmenu.interfaces.OnMenuItemLongClickListener;
 import com.nostra13.universalimageloader.core.ImageLoader;
 import com.nostra13.universalimageloader.core.ImageLoaderConfiguration;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements OnMenuItemClickListener, OnMenuItemLongClickListener {
     private ImageLoader mImageLoader;
     private Toolbar mToolbar;
+    private ContextMenuDialogFragment mMenuDialogFragment;
     private Resources mRes;
     private ListView mDrawerList;
     private List<DrawerItem> mDrawerItems;
@@ -62,12 +75,71 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+    private void initMenuFragment() {
+        MenuParams menuParams = new MenuParams();
+        menuParams.setActionBarSize((int) getResources().getDimension(R.dimen.tool_bar_height));
+        menuParams.setMenuObjects(getMenuObjects());
+        menuParams.setClosableOutside(false);
+        mMenuDialogFragment = ContextMenuDialogFragment.newInstance(menuParams);
+        mMenuDialogFragment.setItemClickListener(this);
+        mMenuDialogFragment.setItemLongClickListener(this);
+    }
+
+    private List<MenuObject> getMenuObjects() {
+        // You can use any [resource, bitmap, drawable, color] as image:
+        // item.setResource(...)
+        // item.setBitmap(...)
+        // item.setDrawable(...)
+        // item.setColor(...)
+        // You can set image ScaleType:
+        // item.setScaleType(ScaleType.FIT_XY)
+        // You can use any [resource, drawable, color] as background:
+        // item.setBgResource(...)
+        // item.setBgDrawable(...)
+        // item.setBgColor(...)
+        // You can use any [color] as text color:
+        // item.setTextColor(...)
+        // You can set any [color] as divider color:
+        // item.setDividerColor(...)
+
+        List<MenuObject> menuObjects = new ArrayList<>();
+
+        MenuObject close = new MenuObject();
+        close.setResource(R.drawable.icn_close);
+
+        MenuObject send = new MenuObject("Send message");
+        send.setResource(R.drawable.icn_1);
+
+        MenuObject like = new MenuObject("Like profile");
+        Bitmap b = BitmapFactory.decodeResource(getResources(), R.drawable.icn_2);
+        like.setBitmap(b);
+
+        MenuObject addFr = new MenuObject("Add to friends");
+        BitmapDrawable bd = new BitmapDrawable(getResources(),
+                BitmapFactory.decodeResource(getResources(), R.drawable.icn_3));
+        addFr.setDrawable(bd);
+
+        MenuObject addFav = new MenuObject("Add to favorites");
+        addFav.setResource(R.drawable.icn_4);
+
+        MenuObject block = new MenuObject("Block user");
+        block.setResource(R.drawable.icn_5);
+
+        menuObjects.add(close);
+        menuObjects.add(send);
+        menuObjects.add(like);
+        menuObjects.add(addFr);
+        menuObjects.add(addFav);
+        menuObjects.add(block);
+        return menuObjects;
+    }
+
     private void initNavDrawerItems() {
         mDrawerItems = new ArrayList<>();
         mDrawerItems.add(new DrawerItem(getDrawable(R.drawable.ic_bicycle), R.string.activity_title_home, DrawerItem.DRAWER_ITEM_TAG_HOME));
         mDrawerItems.add(new DrawerItem(getDrawable(R.drawable.ic_speedometer), R.string.activity_title_dashboard, DrawerItem.DRAWER_ITEM_TAG_DASHBOARD));
         mDrawerItems.add(new DrawerItem(getDrawable(R.drawable.ic_bicycle), R.string.activity_title_pathfinding, DrawerItem.DRAWER_ITEM_TAG_PATHFINDING));
-        mDrawerItems.add(new DrawerItem(getDrawable(R.drawable.ic_search), R.string.activity_title_search, DrawerItem.DRAWER_ITEM_TAG_SEARCH));
+        mDrawerItems.add(new DrawerItem(getDrawable(R.drawable.ic_parking_lot), R.string.activity_title_parking_lot, DrawerItem.DRAWER_ITEM_TAG_PARKING_LOT));
         mDrawerItems.add(new DrawerItem(getDrawable(R.drawable.ic_social_32), R.string.activity_title_social, DrawerItem.DRAWER_ITEM_TAG_SOCIAL));
         mDrawerItems.add(new DrawerItem(getDrawable(R.drawable.ic_stamp), R.string.activity_title_stamp_auth, DrawerItem.DRAWER_ITEM_TAG_STAMP_AUTH));
     }
@@ -151,11 +223,11 @@ public class MainActivity extends AppCompatActivity {
             case DrawerItem.DRAWER_ITEM_TAG_PATHFINDING:
                 fragment = BicycleRoadFragment.newInstance();
                 break;
-//
-//            case DrawerItem.DRAWER_ITEM_TAG_SEARCH:
-////                fragment = SearchFragment.newInstance();
-//                break;
-//
+
+            case DrawerItem.DRAWER_ITEM_TAG_PARKING_LOT:
+                fragment = ParkingLotFragment.newInstance();
+                break;
+
             case DrawerItem.DRAWER_ITEM_TAG_SOCIAL:
                 fragment = SocialFragment.newInstance();
                 break;
@@ -209,6 +281,7 @@ public class MainActivity extends AppCompatActivity {
         initImageLoader();
         initToolbar();
         initDrawerToggle();
+        initMenuFragment();
 
         mTitle = mDrawerTitle = getTitle();
 
@@ -217,9 +290,35 @@ public class MainActivity extends AppCompatActivity {
         initAdapter();
         mDrawerList.setAdapter(new DrawerAdapter(this, mDrawerItems));
         mDrawerList.setOnItemClickListener(new DrawerItemClickListener());
-        mDrawerLayout.setDrawerListener(mDrawerToggle);
+        mDrawerLayout.addDrawerListener(mDrawerToggle);
 
         selectItem(1, DrawerItem.DRAWER_ITEM_TAG_HOME);
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(final Menu menu) {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.menu_main, menu);
+        return true;
+    }
+
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case R.id.context_menu:
+                mMenuDialogFragment.show(getSupportFragmentManager(), ContextMenuDialogFragment.TAG);
+                break;
+        }
+        return super.onOptionsItemSelected(item);
+    }
+
+    @Override
+    public void onMenuItemClick(View clickedView, int position) {
+        Toast.makeText(this, "Clicked on position: " + position, Toast.LENGTH_SHORT).show();
+    }
+
+    @Override
+    public void onMenuItemLongClick(View clickedView, int position) {
+        Toast.makeText(this, "Long clicked on position: " + position, Toast.LENGTH_SHORT).show();
     }
 
     @Override

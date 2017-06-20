@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/Android.iml" filepath="$PROJECT_DIR$/Android.iml" />
       <module fileurl="file://$PROJECT_DIR$/androidbootstrap/androidbootstrap.iml" filepath="$PROJECT_DIR$/androidbootstrap/androidbootstrap.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/contextmenu/contextmenu.iml" filepath="$PROJECT_DIR$/contextmenu/contextmenu.iml" />
       <module fileurl="file://$PROJECT_DIR$/digitspeedview/digitspeedview.iml" filepath="$PROJECT_DIR$/digitspeedview/digitspeedview.iml" />
       <module fileurl="file://$PROJECT_DIR$/lvanims-core/lvanims-core.iml" filepath="$PROJECT_DIR$/lvanims-core/lvanims-core.iml" />
       <module fileurl="file://$PROJECT_DIR$/navtabstrip/navtabstrip.iml" filepath="$PROJECT_DIR$/navtabstrip/navtabstrip.iml" />

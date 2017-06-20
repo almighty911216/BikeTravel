@@ -73,7 +73,7 @@
 
     <com.example.speedviewlib.PointerSpeedometer
         android:id="@+id/pointerSpeedometer"
-        android:layout_width="320dp"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         app:sv_backgroundCircleColor="@color/material_grey_900"
@@ -85,7 +85,7 @@
         app:layout_constraintTop_toBottomOf="@+id/ll_dashboard_top"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        android:layout_marginTop="20dp"/>
+        android:layout_marginTop="10dp"/>
 
     <LinearLayout
         android:id="@+id/ll_dashboard_mid"

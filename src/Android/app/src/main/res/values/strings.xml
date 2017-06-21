@@ -6,7 +6,6 @@
     <string name="activity_title_pathfinding">경로탐색</string>
     <string name="activity_title_parking_lot">자전거 보관소</string>
     <string name="activity_title_social">게시판</string>
-    <string name="activity_title_stamp_auth">도장 찍기</string>
 
     <string name="state_seoul">서울</string>
     <string name="state_busan">부산</string>
@@ -22,6 +21,10 @@
     <string name="comment">댓글</string>
     <string name="detailed_view">상세보기</string>
 
+    <!-- 길찾기 -->
+    <string name="starting_point">출발지 :</string>
+    <string name="end_point">도착지 : </string>
+
 
     <!-- 대쉬보드 -->
     <string name="distance">거리</string>
@@ -34,7 +37,7 @@
     <string name="lapse">경과시간</string>
     <string name="my_loc">내 위치</string>
     <string name="weight">체중</string>
-    
+
     <!-- 주차장 -->
     <string name="parking_loc">주차위치 :</string>
     <string name="parking_time">주차시간 :</string>

@@ -10,7 +10,6 @@ public class DrawerItem {
 	public static final int DRAWER_ITEM_TAG_PATHFINDING = 3;
 	public static final int DRAWER_ITEM_TAG_PARKING_LOT = 4;
 	public static final int DRAWER_ITEM_TAG_SOCIAL = 5;
-	public static final int DRAWER_ITEM_TAG_STAMP_AUTH = 6;
 	
 	public DrawerItem(Drawable icon, int title, int tag) {
 		this.icon = icon;

@@ -1,1 +1,1 @@
-include ':app', ':navtabstrip', ':universal-image-loader-1.9.5', ':speedviewlib', ':nineoldandroids-2.4.0', ':digitspeedview', ':pulltozoomview', ':lvanims-core', ':androidbootstrap', ':contextmenu'
+include ':app', ':navtabstrip', ':universal-image-loader-1.9.5', ':speedviewlib', ':nineoldandroids-2.4.0', ':digitspeedview', ':pulltozoomview', ':lvanims-core', ':androidbootstrap', ':contextmenu', ':com.skp.Tmap_1.0.47', ':okhttp-3.8.1', ':okio-1.13.0'

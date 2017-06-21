@@ -3,8 +3,8 @@
 
     <string-array name="bicycle_road_tab_titles">
         <item>길찾기</item>
-        <item>국토종주</item>
         <item>전국</item>
+        <item>테마</item>
     </string-array>
 
 </resources>

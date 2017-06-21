@@ -5,11 +5,14 @@
       <module fileurl="file://$PROJECT_DIR$/Android.iml" filepath="$PROJECT_DIR$/Android.iml" />
       <module fileurl="file://$PROJECT_DIR$/androidbootstrap/androidbootstrap.iml" filepath="$PROJECT_DIR$/androidbootstrap/androidbootstrap.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/com.skp.Tmap_1.0.47/com.skp.Tmap_1.0.47.iml" filepath="$PROJECT_DIR$/com.skp.Tmap_1.0.47/com.skp.Tmap_1.0.47.iml" />
       <module fileurl="file://$PROJECT_DIR$/contextmenu/contextmenu.iml" filepath="$PROJECT_DIR$/contextmenu/contextmenu.iml" />
       <module fileurl="file://$PROJECT_DIR$/digitspeedview/digitspeedview.iml" filepath="$PROJECT_DIR$/digitspeedview/digitspeedview.iml" />
       <module fileurl="file://$PROJECT_DIR$/lvanims-core/lvanims-core.iml" filepath="$PROJECT_DIR$/lvanims-core/lvanims-core.iml" />
       <module fileurl="file://$PROJECT_DIR$/navtabstrip/navtabstrip.iml" filepath="$PROJECT_DIR$/navtabstrip/navtabstrip.iml" />
       <module fileurl="file://$PROJECT_DIR$/nineoldandroids-2.4.0/nineoldandroids-2.4.0.iml" filepath="$PROJECT_DIR$/nineoldandroids-2.4.0/nineoldandroids-2.4.0.iml" />
+      <module fileurl="file://$PROJECT_DIR$/okhttp-3.8.1/okhttp-3.8.1.iml" filepath="$PROJECT_DIR$/okhttp-3.8.1/okhttp-3.8.1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/okio-1.13.0/okio-1.13.0.iml" filepath="$PROJECT_DIR$/okio-1.13.0/okio-1.13.0.iml" />
       <module fileurl="file://$PROJECT_DIR$/pulltozoomview/pulltozoomview.iml" filepath="$PROJECT_DIR$/pulltozoomview/pulltozoomview.iml" />
       <module fileurl="file://$PROJECT_DIR$/speedviewlib/speedviewlib.iml" filepath="$PROJECT_DIR$/speedviewlib/speedviewlib.iml" />
       <module fileurl="file://$PROJECT_DIR$/universal-image-loader-1.9.5/universal-image-loader-1.9.5.iml" filepath="$PROJECT_DIR$/universal-image-loader-1.9.5/universal-image-loader-1.9.5.iml" />

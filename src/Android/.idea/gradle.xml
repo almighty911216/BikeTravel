@@ -10,11 +10,14 @@
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/androidbootstrap" />
             <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/com.skp.Tmap_1.0.47" />
             <option value="$PROJECT_DIR$/contextmenu" />
             <option value="$PROJECT_DIR$/digitspeedview" />
             <option value="$PROJECT_DIR$/lvanims-core" />
             <option value="$PROJECT_DIR$/navtabstrip" />
             <option value="$PROJECT_DIR$/nineoldandroids-2.4.0" />
+            <option value="$PROJECT_DIR$/okhttp-3.8.1" />
+            <option value="$PROJECT_DIR$/okio-1.13.0" />
             <option value="$PROJECT_DIR$/pulltozoomview" />
             <option value="$PROJECT_DIR$/speedviewlib" />
             <option value="$PROJECT_DIR$/universal-image-loader-1.9.5" />

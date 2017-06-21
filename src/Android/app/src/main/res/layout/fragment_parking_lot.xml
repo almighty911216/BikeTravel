@@ -35,9 +35,10 @@
             android:gravity="center_horizontal|center_vertical"/>
 
         <TextView
+            android:id="@+id/tv_parking_loc"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="test 부산대"
+            android:text="금정구 부산대학로38번길 59"
             android:textStyle="bold"
             android:textSize="20sp"
             android:textColor="@color/white"
@@ -64,6 +65,7 @@
             android:gravity="center_horizontal|center_vertical"/>
 
         <TextView
+            android:id="@+id/tv_parking_time"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:text="test 00:00:00"

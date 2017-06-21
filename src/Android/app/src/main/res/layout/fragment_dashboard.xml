@@ -33,6 +33,7 @@
                 android:gravity="center"/>
 
             <TextView
+                android:id="@+id/tv_time"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
@@ -60,6 +61,7 @@
                 android:gravity="center"/>
 
             <TextView
+                android:id="@+id/tv_my_loc"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
@@ -114,6 +116,7 @@
                 android:gravity="center"/>
 
             <TextView
+                android:id="@+id/tv_distance"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
@@ -141,6 +144,7 @@
                 android:gravity="center"/>
 
             <TextView
+                android:id="@+id/tv_avg_speed"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
@@ -168,6 +172,7 @@
                 android:gravity="center"/>
 
             <TextView
+                android:id="@+id/tv_rpm"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
@@ -195,6 +200,7 @@
                 android:gravity="center"/>
 
             <TextView
+                android:id="@+id/tv_calorie"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"

@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "399424738015",
+    "firebase_url": "https://biketravel-4c352.firebaseio.com",
+    "project_id": "biketravel-4c352",
+    "storage_bucket": "biketravel-4c352.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:399424738015:android:60df9ac3fccd1513",
+        "android_client_info": {
+          "package_name": "com.example.almig.android"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "399424738015-035b8etoca11j6qkn9n99sbfu0tsqlr2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCCFsS0DUOmrKKxIv-_f0jBxqbGCfxgBKk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
